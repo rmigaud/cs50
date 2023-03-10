@@ -1,0 +1,5 @@
+.vscode/settings.json
+.vscode/tasks.json
+c/hello/hello.exe
+c/libs/cs50.c
+c/libs/cs50.h
