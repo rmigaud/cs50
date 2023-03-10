@@ -1,10 +1,10 @@
-# CS50 is a an introductory cs "opencourseware" taught by David Malan of Harvard fame.
+## CS50 is a an introductory cs "opencourseware" taught by David Malan of Harvard University.
 
 [about the course](https://cs50.harvard.edu/x/2023/)
 
 ## Running c programs in windows 10
 
-### (powershell, https://winlibs.com/#download-release, install chocolatey, choco install make)
+on windows using powershell, [with a gcc comiler](https://winlibs.com/#download-release), [install chocolatey](https://chocolatey.org/install), choco install make)
 
 ```
 make file-name CC=gcc ; ./file-name
