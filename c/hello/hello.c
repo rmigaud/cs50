@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../libs/mycs50.c"
+#include "../libs/scan_line.c"
 
 char* scan_line( char * prompt,char *line);
 

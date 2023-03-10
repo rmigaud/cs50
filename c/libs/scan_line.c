@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-char* scan_line( char * prompt,char *line)
+char* scan_line(char * prompt, char *line)
 {
   printf(prompt);
     int ch;             // as getchar() returns `int`
