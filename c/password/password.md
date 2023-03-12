@@ -1,5 +1,7 @@
 ## Motivation
 
+[cs50-password](https://cs50.harvard.edu/x/2023/problems/2/password/)
+
 As we all know by now, it's important to use passwords that are not easy to guess! Many web apps now require passwords that require not only alphabetical characters, but also number and symbols. In this lab, the user is prompted for a password, which will then be validated using a function `check` that you will complete. If the password contains at least one upper case letter, one lower case letter, a number, and a symbol (meaning a printable character that's not a letter or number such as '!', '$', and '#'), the function should return `true`. If not it should return `false`.
 
 - The `ctype` library has many useful functions that can come in handy here.
