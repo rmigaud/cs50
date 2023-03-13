@@ -12,7 +12,28 @@ int main (void)
   printf("password.c\n");
   char * password;
   password = get_password(password);
-    
+  validate_password(password);
+  
+  free(password);
+  return 0;
+}
+
+char * get_password(char * password)
+{
+  printf("Enter your password: ");
+  password = malloc(10 * sizeof(char));
+  if(password == NULL) 
+  {
+    free(password);
+    printf("Unable to allocate memory.");
+  }
+
+  scanf("%10s", password);
+  return password;
+}
+
+char * validate_password(char * password)
+{
   char ch = *(password);
   int next_index = 1;
   int upper=false, lower=false, number=false, symbol=false;
@@ -47,20 +68,4 @@ int main (void)
     printf("Your password needs at least one uppercase ");
     printf("letter, lowercase letter, number and symbol!\n");
   }
-  free(password);
-  return 0;
 }
-
-char * get_password(char * password)
-{
-  printf("Enter your password: ");
-  password = malloc(10 * sizeof(char));
-  if(password == NULL) 
-  {
-    printf("Unable to allocate memory.");
-  }
-
-  scanf("%10s", password);
-  
-  return password;
-  }
