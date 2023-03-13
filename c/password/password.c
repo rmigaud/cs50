@@ -27,7 +27,7 @@ char * get_password(char * password)
     free(password);
     printf("Unable to allocate memory.");
   }
-
+  
   scanf("%10s", password);
   return password;
 }
@@ -37,7 +37,7 @@ char * validate_password(char * password)
   char ch = *(password);
   int next_index = 1;
   int upper=false, lower=false, number=false, symbol=false;
-
+  
   while(ch != '\0')
   {
     if(ch >=97 && ch <=122)
@@ -56,7 +56,7 @@ char * validate_password(char * password)
     {
       number=true;
     }
-
+    
     ch = *(password + next_index);
     next_index++;
   }
