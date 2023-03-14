@@ -33,10 +33,20 @@ int my_atoi(char * input)
     } else if(negative == 0 && length == 0 && ch >=48 && ch <=57) {
       negative = 1;
     }
-    
-    if(ch >=48 && ch <=57 && dec_length == 0){
-      int_array[length] = ((int) ch) - 48;
-      length++;
+    if(ch >=48 && ch <=57)
+    {
+      if(dec_length == 0)
+      {
+        int_array[length] = ((int) ch) - 48;
+        length++;
+      } else {
+        total += (((int) ch) - 48) * pow(10, -dec_length);
+        dec_length++;
+      }
+    }
+    if(ch == 46)
+    {
+      dec_length++;
     }
     ch = *(input + next_index);
     next_index++;
