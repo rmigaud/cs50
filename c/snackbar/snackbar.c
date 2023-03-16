@@ -49,18 +49,6 @@ float get_cost(char *choice)
 
   for(int i=0; i<MENU_SIZE; i++ )
   {
-  // char * lower_menu_item = snacks[i].name;
-  // char * lower_choice = choice;
-  // char ch = lower_menu_item
-  //   for(int j = 0; lower_menu_item[j]; j++){
-  //     lower_menu_item[j] = tolower(lower_menu_item[j]);
-  //   }
-  //   printf("to lower menu item: %s\n", lower_menu_item);
-  //   printf("to lower choice item: %s\n", lower_choice);
-
-    // for(int i = 0; choice[i]; i++){
-    //   choice[i] = tolower(choice[i]);
-    // }
 
     if(strcmp(snacks[i].name, choice) == 0)
     {
